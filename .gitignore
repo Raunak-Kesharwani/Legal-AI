@@ -1,5 +1,6 @@
-*.txt
+cricket.txt
 *.docx
 *.ipynb
-.ipynb_checpoints
+.ipynb_checkpoints/
 .venv/
+sample-doc/
