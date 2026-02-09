@@ -4,9 +4,17 @@ class TextSplitter:
     def __init__(self, text: str):
         self.text = text
 
-    def split(self):
+    def summary_split(self):
         splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1200,
+            chunk_size=2500,
             chunk_overlap=150
         )
         return splitter.split_text(self.text)
+
+    def embed_split(self):
+        splitter = RecursiveCharacterTextSplitter(
+            chunk_size= 1200,
+            chunk_overlap=150
+        )
+        return splitter.split_documents(self.text)
+

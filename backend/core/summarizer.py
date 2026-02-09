@@ -11,7 +11,7 @@ class LegalSummarizer:
         self.text = text
 
     def summarize(self) -> FinalLegalResponse:
-        chunks = TextSplitter(self.text).split()
+        chunks = TextSplitter(self.text).summary_split()
 
         chunks = cap_chunks(chunks, max_chunks=9)
 
