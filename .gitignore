@@ -1,6 +1,7 @@
 cricket.txt
 *.docx
-*.ipynb
+
 .ipynb_checkpoints/
 .venv/
 sample-doc/
+__pycache__/

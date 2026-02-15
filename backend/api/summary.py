@@ -4,6 +4,10 @@ from fastapi import APIRouter, UploadFile, File, Form, HTTPException
 from shared.schemas import SummaryResponse
 import uuid
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 router = APIRouter()
 
 
