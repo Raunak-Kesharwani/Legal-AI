@@ -1,7 +1,8 @@
 cricket.txt
 *.docx
-
+uploads/
 .ipynb_checkpoints/
 .venv/
 sample-doc/
 __pycache__/
+legal_ai.db
